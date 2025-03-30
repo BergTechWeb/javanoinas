@@ -30,22 +30,25 @@ public class Computador {
         this.mu = null;
     } 
 
+    public Computador(float preco) {
+        this.preco=preco;
+    }
+
+
 
     public void mostraPCConfigs () {
-
-        System.out.println("As configurcoes do seu pc sao as seguintes:\n");
 
         System.out.println("Marca: " + marca);
         System.out.println("Preco: " + preco);
 
-        System.out.println(hb1.nome + "(" + hb1.capacidade + ")");
+        System.out.println(hb1.nome + "(" + hb1.capacidade + "Mhz)");
         System.out.println(hb2.capacidade + hb2.nome);
         System.out.println(hb3.capacidade + hb3.nome);
 
-        System.out.println(so.nome + "(" + so.tipo + ")");
+        System.out.println("Sistema Operacional "+ so.nome + "(" + so.tipo + "bits)");
 
         if (mu!=null){
-            System.out.println(mu.nome + mu.capacidade);
+            System.out.println("Acompanha " + mu.nome + " de " + mu.capacidade + "Gb");
         }
     }
 
