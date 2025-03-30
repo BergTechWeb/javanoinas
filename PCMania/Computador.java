@@ -10,6 +10,7 @@ public class Computador {
     MemoriaUSB mu;
     SistemaOperacional so;
 
+    //construtor(es)
     public Computador(HardwareBasico hb1, HardwareBasico hb2, HardwareBasico hb3, String marca, MemoriaUSB mu, float preco, SistemaOperacional so) {
         this.hb1 = hb1;
         this.hb2 = hb2;
@@ -35,7 +36,7 @@ public class Computador {
     }
 
 
-
+    //metodos
     public void mostraPCConfigs () {
 
         System.out.println("Marca: " + marca);
